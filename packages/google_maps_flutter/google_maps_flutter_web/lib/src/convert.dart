@@ -103,6 +103,9 @@ gmaps.MapOptions _configurationAndStyleToGmapsOptions(
 
   options.mapId = configuration.cloudMapId;
 
+  options.cameraControlOptions =
+      gmaps.CameraControlOptions(position: gmaps.ControlPosition.RIGHT_CENTER);
+
   return options;
 }
 
